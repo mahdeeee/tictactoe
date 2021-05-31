@@ -25,7 +25,7 @@ int win(){
 			if((showx[w] + showy[w]) == 13){
 				ccy++;
 			}
-		//The following line is for debugging
+	//The following line is for debugging
 	//printf("P1 -> countx = %d, county = %d, ccx = %d, ccy = %d\n", countx, county, ccx, ccy);
 		}
 		if(countx >= 3 || county >= 3 || ccx >= 3 || ccy >= 3){
