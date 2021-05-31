@@ -1,6 +1,6 @@
-unsigned short int showx[12];
-unsigned short int showy[12];
-char moves[12];
+unsigned short int showx[10];
+unsigned short int showy[10];
+char moves[10];
 
 #include <stdio.h>
 #include <stdlib.h>
