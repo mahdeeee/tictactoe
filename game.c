@@ -69,7 +69,7 @@ int main(int argc, char **argv){
         }
 	else{ help(); };
         for(i=1;i<=13;i++){
-            printf("\t\t\33[0;36m!\33[0m");
+            printf("\t\t\33[1;35m!\33[0m");
             for(j=1;j<=12;j++){
                 for(k=0;showx[k]!=0;k++){
                     if(i == showx[k] && j == showy[k]){
@@ -83,13 +83,13 @@ int main(int argc, char **argv){
                     }
                 }
                 if(j == 12 || j==4 || j==8){
-                    printf("\33[0;32m!\33[0m");
+                    printf("\33[1;35m!\33[0m");
                 }
                 else if(i==1 || i==5 || i==9 || i==13){
-                    printf("\33[0;33m=\33[0m");
+                    printf("\33[1;32m=\33[0m");
                 }
                 else if(i==x && j==y){
-                    printf("*");
+                    printf("\33[1;37m%c\33[0m", starter);
                 }
                 else{
                     printf(" ");
