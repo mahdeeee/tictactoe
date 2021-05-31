@@ -18,28 +18,16 @@ int main(int argc, char **argv){
 	printf("\t     -----Move for %c-----\n", starter);
         switch(ch){
                 case 'k':
-                        x = x - 4;
-                        if(x < 3){
-                                x = 11;
-                        }
+			x = (x - 4 < 3)? 11:x -4;
                         break;
                 case 'j':
-                        y = y - 4;
-                        if(y < 2){                                                                   
-				y = 10;
-                        }
+			y = (y - 4 < 2)?10:y-4;
                         break;
                 case 'm':
-                        x = x + 4;
-                        if(x > 12){
-                                x = 3;
-                        }
+			x = (x + 4 > 12)?3:x+4;
                         break;
                 case 'l':
-                        y = y +4;
-                        if(y > 12){
-                                y = 2;
-                        }
+			y = (y + 4 > 12)?2:y +4;
                         break;
                 case ' ':
                         if(1 == dif(x, y)){
