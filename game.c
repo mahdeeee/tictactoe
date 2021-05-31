@@ -25,7 +25,8 @@ int main(int argc, char **argv){
                         break;
                 case 'j':
                         y = y - 4;
-                        if(y < 2){                                                                    y = 10;
+                        if(y < 2){                                                                   
+				y = 10;
                         }
                         break;
                 case 'm':
