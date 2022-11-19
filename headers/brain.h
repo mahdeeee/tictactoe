@@ -9,6 +9,17 @@ void help(){
 	printf("              1 to exit\n\n\33[1;0m");
 }
 
+void winhelp(){
+	printf("\33[1;31m\t      -----Controls-----\n");
+	printf("    ^         w for up\n");
+	printf("    w         d for right\n");
+	printf("<a  O  d>     a for left\n");
+	printf("    s         s for down\n");
+	printf("    -                     \n");
+	printf("              <SPACE> to place your move\n");
+	printf("              1 to exit\n\n\33[1;0m");
+}
+
 int win(){
         unsigned short int y, w , countx=0, county = 0, ccx = 0, ccy = 0;
         for(y = 2;y < 12; y+= 4){
