@@ -18,16 +18,16 @@ int main(int argc, char **argv){
     system("cls");
 	printf("\t     -----Move for %c-----\n", starter);
         switch(ch){
-                case 'k':
+                case 'w':
 			x = (x - 4 < 3)? 11:x -4;
                         break;
-                case 'j':
+                case 'a':
 			y = (y - 4 < 2)?10:y-4;
                         break;
-                case 'm':
+                case 's':
 			x = (x + 4 > 12)?3:x+4;
                         break;
-                case 'l':
+                case 'd':
 			y = (y + 4 > 12)?2:y +4;
                         break;
                 case ' ':
@@ -56,7 +56,7 @@ int main(int argc, char **argv){
                         }
                         break;
                 default:
-                        help();
+                        winhelp();
         }
         for(i=1;i<=13;i++){
             printf("\t\t\33[1;35m!\33[0m");
@@ -91,3 +91,4 @@ int main(int argc, char **argv){
         ch = getch();
     }
 }
+
